@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head> </head>
+
+<body>
+    <div id="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button class="num" onclick="display.value += '1'">1</button>
+            <button class="num" onclick="display.value += '2'">2</button>
+            <button class="num" onclick="display.value += '3'">3</button>
+            <button class="operator" onclick="display.value += '+'">+</button>
+            <br>
+            <button class="num" onclick="display.value += '4'">4</button>
+            <button class="num" onclick="display.value += '5'">5</button>
+            <button class="num" onclick="display.value += '6'">6</button>
+            <button class="operator" onclick="display.value += '-'">-</button>
+            <br>
+            <button class="num" onclick="display.value += '7'">7</button>
+            <button class="num" onclick="display.value += '8'">8</button>
+            <button class="num" onclick="display.value += '9'">9</button>
+            <button class="operator" onclick="display.value += '*'">*</button>
+            <br>
+            <button class="clear" onclick="display.value = ''">C</button>
+            <button class="num" onclick="display.value += '0'">0</button>
+            <button class="evaluate" onclick="display.value = eval(display.value)">=</button>
+            <button class="operator" onclick="display.value += '/'">/</button>
+        </div>
+
+    </div>
+    <div class="l1">
+        <button class="logout" onclick="verify();">Logout</button>
+    </div>
+
+
+</body>
+
+</html>
